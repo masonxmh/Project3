@@ -9,7 +9,8 @@
   <meta name="author" content="">
 
   <title>Grayscale - Start Bootstrap Theme</title>
-
+   
+  <link href="assets/css/style.css" rel="stylesheet">
   <!-- Bootstrap core CSS -->
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
@@ -39,10 +40,16 @@
             <a class="nav-link js-scroll-trigger" href="#about">Background</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#projects">Projects</a>
+            <a class="nav-link js-scroll-trigger" href="#data">Data</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#signup">Contact</a>
+            <a class="nav-link js-scroll-trigger" href="#model">Model</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#projects">Analysis</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#signup">Predictions</a>
           </li>
         </ul>
       </div>
@@ -60,7 +67,8 @@
     </div>
   </header>
 
-  <!-- About Section -->
+  <!-- Vicky Section -->
+  <!-- Background Section -->
   <section id="about" class="about-section text-center">
     <div class="container">
       <div class="row">
@@ -73,24 +81,48 @@
       <img src="assets/img/ipad.png" class="img-fluid" alt="">
     </div>
   </section>
+  
 
-  <!-- Projects Section -->
-  <section id="projects" class="projects-section bg-light">
+  <!-- Data Section -->
+  <section id="data" class="projects-section bg-light">
     <div class="container">
 
-      <!-- Featured Project Row -->
-      <div class="row align-items-center no-gutters mb-4 mb-lg-">
-        <div class="col-xl-6 col-lg-6">
-          <img class="img-fluid mb-3 mb-lg-0" src="assets/img/bg-masthead.jpg" alt="">
+      <!-- X-ray -->
+      <div class="row align-items-center  mb-2 mb-lg">
+        <div class="col-lg-6 col-lg-6">
+          <img class="img-fluid x-ray mb-3 mb-lg" src="assets/img/normal.jpg" alt="">
         </div>
-        <div class="col-xl-6 col-lg-6">
-          <img class="img-fluid mb-3 mb-lg-0" src="assets/img/bg-masthead.jpg" alt="">
+        <div class="col-lg-6 col-lg-6">
+          <img class="img-fluid x-ray mb-3 mb-lg" src="assets/img/pneumonia.jpg" alt="">
         </div>
       </div>
-      
-     <!-- Project Zero Row -->
-      <div class="row align-items-center no-gutters mb-4 mb-lg-12"></div>
+
+      <div class="row zero_row mb-0">
         <div class="col-xl-12 col-lg-12">
+          <div class="featured-text text-center text-lg-left mb-0">
+            <h4>Shoreline</h4>
+            <p class="text-black-50 mb-4">Grayscale is open source and MIT licensed. This means you can use it for any project - even commercial projects! Download it, customize it, and publish your website!</p>
+          </div>
+        </div>
+      </div>
+      <!-- Pie Chart -->
+      <div class="row align-items-center no-gutters mb-4 mb-lg-5">
+        <div class="col-xl-8 col-lg-7">
+          <img class="img-fluid mb-3 mb-lg-0" src="assets/img/pie.png" alt="">
+        </div>
+        <div class="col-xl-4 col-lg-5">
+          <div class="featured-text text-center text-lg-left">
+            <h4>Shoreline</h4>
+            <p class="text-black-50 mb-0">Grayscale is open source and MIT licensed. This means you can use it for any project - even commercial projects! Download it, customize it, and publish your website!</p>
+          </div>
+        </div>
+      </div>
+      <!-- Bar Chart -->
+      <div class="row align-items-center no-gutters mb-4 mb-lg-5">
+        <div class="col-xl-8 col-lg-7">
+          <img class="img-fluid mb-3 mb-lg-0" src="assets/img/bar.png" alt="">
+        </div>
+        <div class="col-xl-4 col-lg-5">
           <div class="featured-text text-center text-lg-left">
             <h4>Shoreline</h4>
             <p class="text-black-50 mb-0">Grayscale is open source and MIT licensed. This means you can use it for any project - even commercial projects! Download it, customize it, and publish your website!</p>
@@ -98,8 +130,137 @@
         </div>
       </div>
 
-      <!-- Project One Row -->
-      <div class="row justify-content-center no-gutters">
+    </div>
+  </section>
+  <!-- Vicky Section End-->
+
+  <!-- Mason Section End-->
+  <!-- Model Section -->
+  <section id="model" class="projects-section bg-light">
+    <div class="container">    
+      <!-- Model Theory-->
+      <div class="row align-items-center  mb-4 mb-lg-5">
+        <div class="col-xl-8 col-lg-7">
+          <img class="img-fluid mb-3 mb-lg" src="assets/img/vgg.png" alt="">
+        </div>
+        <div class="col-xl-4 col-lg-5">
+          <img class="img-fluid mb-3 mb-lg" src="assets/img/layer.png" alt="">
+        </div>
+      </div>
+
+      <div class="row mb-4 mb-lg-5 mb-0 mb-lg-5">
+        <div class="col-xl-12 col-lg-12">
+          <div class="featured-text text-center text-lg-left mb-0 mb-lg-5">
+            <h4>Model Architecture</h4>
+            <p class="text-black-50 mb-50">Grayscale is open source and MIT licensed. This means you can use it for any project - even commercial projects! Download it, customize it, and publish your website!</p>
+          </div>
+        </div>
+      </div>
+
+    <!-- Model Parameters -->
+    <div class="row align-items-center no-gutters mb-0 mb-lg-5">
+      <div class="col-xl-8 col-lg-7">
+        <img class="img-fluid mb-0 mb-lg-0" src="assets/img/vgg16-2.png" alt="">
+      </div>
+      <div class="col-xl-4 col-lg-5">
+        <div class="featured-text text-center text-lg-left">
+          <h4>Model</h4>
+          <p class="text-black-50 mb-0 mb-lg-0">Grayscale is open source and MIT licensed. This means you can use it for any project - even commercial projects! Download it, customize it, and publish your website!</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Model Performance-->
+    <div class="row align-items-center  mb-4 mb-lg-10">
+      <div class="col-xl-12 col-lg-12">
+        <img class="img-fluid mb-3 mb-lg" src="assets/img/Performance.png" alt="">
+      </div>
+    
+    <div class="row mb-10">
+      <div class="col-xl-12 col-lg-12">
+        <div class="featured-text text-center text-lg-left mb-0 mb-lg-0">
+          <h4>Model Performance</h4>
+          <p class="text-black-50 mb-8">Grayscale is open source and MIT licensed. This means you can use it for any project - even commercial projects! Download it, customize it, and publish your website!</p>
+        </div>
+      </div>
+    </div>
+
+    
+
+    </div>
+  </section>
+      
+  
+  <!-- Analysis Section -->
+  <section id="projects" class="projects-section bg-light">
+    <div class="container">    
+      
+      <!-- CM Chart -->
+      <div class="row align-items-center no-gutters mb-4 mb-lg-5">
+        <div class="col-xl-8 col-lg-7">
+          <img class="img-fluid mb-3 mb-lg-0" src="assets/img/CM-Modified.png" alt="">
+        </div>
+        <div class="col-xl-4 col-lg-5">
+          <div class="featured-text text-center text-lg-left">
+            <h4>Shoreline</h4>
+            <p class="text-black-50 mb-0">Grayscale is open source and MIT licensed. This means you can use it for any project - even commercial projects! Download it, customize it, and publish your website!</p>
+          </div>
+        </div>
+      </div>
+      <!-- Accuracy Table -->
+      <div class="row align-items-center no-gutters mb-4 mb-lg-5">
+        <div class="col-xl-8 col-lg-7">
+          <img class="rounded float-right ml-auto mb-lg-0" src="assets/img/accuracy.png" alt="">
+        </div>
+        <div class="col-xl-4 col-lg-5">
+          <div class="featured-text text-center text-lg-left">
+            <h4>Shoreline</h4>
+            <p class="text-black-50 mb-0">Grayscale is open source and MIT licensed. This means you can use it for any project - even commercial projects! Download it, customize it, and publish your website!</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Prediction Section -->
+  <section id="signup" class="signup-section">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-10 col-lg-8 mx-auto text-center">
+
+          <i class="far fa-paper-plane fa-2x mb-2 text-white"></i>
+          <h2 class="text-white mb-5">Subscribe to receive updates!</h2>
+
+        </div>
+      </div>
+
+      <!-- Prediction -->
+      <div class="row align-items-center  mb-4 mb-lg-10">
+        <div class="col-xl-12 col-lg-12">
+          <img class="img-fluid mb-3 mb-lg" src="assets/img/prediction.png" alt="">
+        </div>
+      </div>
+      <div class="row align-items-center  mb-4 mb-lg-10">
+        <div class="col-xl-12 col-lg-12">
+          <img class="img-fluid mb-3 mb-lg" src="assets/img/prediction2.png" alt="">
+        </div>
+      </div>
+        <div class="row mb-10">
+          <div class="col-xl-12 col-lg-12">
+            <div class="featured-text text-center text-lg-left mb-0 mb-lg-0">
+              <h4 class="text-white mb-5">Prediction</h4>
+              <p class="text-white-50 mb-8">Grayscale is open source and MIT licensed. This means you can use it for any project - even commercial projects! Download it, customize it, and publish your website!</p>
+            </div>
+          </div>
+    </div>
+  </section>
+
+  <!-- Analysis Section Copy -->
+  <!-- <section id="projects" class="projects-section bg-light">
+    <div class="container">    
+      
+      <div class="row justify-content-center no-gutters mb-lg-0">
         <div class="col-lg-6">
           <img class="img-fluid" src="assets/img/demo-image-01.jpg" alt="">
         </div>
@@ -116,7 +277,7 @@
         </div>
       </div>
 
-      <!-- Project Two Row -->
+      
       <div class="row justify-content-center no-gutters">
         <div class="col-lg-6">
           <img class="img-fluid" src="assets/img/demo-image-02.jpg" alt="">
@@ -135,10 +296,10 @@
       </div>
 
     </div>
-  </section>
+  </section> -->
 
   <!-- Signup Section -->
-  <section id="signup" class="signup-section">
+  <!-- <section id="signup" class="signup-section">
     <div class="container">
       <div class="row">
         <div class="col-md-10 col-lg-8 mx-auto text-center">
@@ -154,10 +315,10 @@
         </div>
       </div>
     </div>
-  </section>
+  </section> -->
 
   <!-- Contact Section -->
-  <section class="contact-section bg-black">
+  <!-- <section class="contact-section bg-black">
     <div class="container">
 
       <div class="row">
@@ -211,12 +372,12 @@
       </div>
 
     </div>
-  </section>
+  </section> -->
 
   <!-- Footer -->
   <footer class="bg-black small text-center text-white-50">
     <div class="container">
-      Copyright &copy; Your Website 2019
+      Copyright &copy; Mohan Xing, Peirang Xu, Vicky Zhang 2020
     </div>
   </footer>
 
