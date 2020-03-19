@@ -8,9 +8,8 @@
   <meta name="description" content="">
   <meta name="author" content="">
 
-  <title>Grayscale - Start Bootstrap Theme</title>
+  <title>Chest X-ray Images Deep Learning</title>
    
-  <link href="assets/css/style.css" rel="stylesheet">
   <!-- Bootstrap core CSS -->
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
@@ -29,7 +28,7 @@
   <!-- Navigation -->
   <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
     <div class="container">
-      <a class="navbar-brand js-scroll-trigger" href="#page-top">Chest Xray Images</a>
+      <a class="navbar-brand js-scroll-trigger" href="#page-top">Chest Xray Image Deep Learning</a>
       <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
         Menu
         <i class="fas fa-bars"></i>
@@ -61,7 +60,7 @@
     <div class="container d-flex h-100 align-items-center">
       <div class="mx-auto text-center">
         <h1 class="mx-auto my-0 text-uppercase">Deep Learning</h1>
-        <h2 class="text-white-50 mx-auto mt-2 mb-5">A Model for Chest X-rays.</h2>
+        <h2 class="text-white-50 mx-auto mt-2 mb-5">A Model for Chest X-rays Images.</h2>
         <a href="#about" class="btn btn-primary js-scroll-trigger">Get Started</a>
       </div>
     </div>
@@ -74,11 +73,18 @@
       <div class="row">
         <div class="col-lg-8 mx-auto">
           <h2 class="text-white mb-4">Background</h2>
-          <p class="text-white-50">Grayscale is a free Bootstrap theme created by Start Bootstrap. It can be yours right now, simply download the template on
-            <a href="http://startbootstrap.com/template-overviews/grayscale/">the preview page</a>. The theme is open source, and you can use it for any purpose, personal or commercial.</p>
+          <p class="text-white-50">In late 2019, the outbreak and spread of Coronavirus sent the world into a panic. 
+            Thousands of people around the world get confirmed each day. This is the virus that can affect the respiratory system and cause pneumonia. 
+            A huge number of suspected patients began to go to various testing sites for testing. 
+            And at the same time, the lung testing departments of major hospitals are also overcrowded. 
+            In the United States, the speed of lung X- rays tests is limited. 
+            In an emergency, the results of a chest X-ray can be available within a short period of time. 
+            Otherwise, results are usually ready in 1 or 2 days. In most cases, results cannot be given directly to the patient or family at the time of the test. 
+            In this case, our team members decided to make a model of machine learning, by training pictures of normal patients and patients with pneumonia. 
+            Use this method to improve the speed of pneumonia diagnosis and treatment.</p>
         </div>
       </div>
-      <img src="assets/img/ipad.png" class="img-fluid" alt="">
+      <img src="assets/img/green.png" class="img-fluid" alt="">
     </div>
   </section>
   
@@ -97,11 +103,11 @@
         </div>
       </div>
 
-      <div class="row zero_row mb-0">
+      <div class="row mb-0 mb-lg-5">
         <div class="col-xl-12 col-lg-12">
           <div class="featured-text text-center text-lg-left mb-0">
-            <h4>Shoreline</h4>
-            <p class="text-black-50 mb-4">Grayscale is open source and MIT licensed. This means you can use it for any project - even commercial projects! Download it, customize it, and publish your website!</p>
+            <h4>Normal V.S. Pneumonia X-rays</h4>
+            <p class="text-black-50 mb-4">Data Sources: <a href="https://data.mendeley.com/datasets/rscbjbr9sj/3">data.mendeley.com</a>, <a href="https://project3-data.s3.amazonaws.com/chest_xray.zip">Amazon Web Services</a</p>
           </div>
         </div>
       </div>
@@ -112,8 +118,8 @@
         </div>
         <div class="col-xl-4 col-lg-5">
           <div class="featured-text text-center text-lg-left">
-            <h4>Shoreline</h4>
-            <p class="text-black-50 mb-0">Grayscale is open source and MIT licensed. This means you can use it for any project - even commercial projects! Download it, customize it, and publish your website!</p>
+            <h4>Percentage of Cases</h4>
+            <p class="text-black-50 mb-0">Totally, There are 73% of cases are Pneumonia, 27% of cases are normal</p>
           </div>
         </div>
       </div>
@@ -124,8 +130,8 @@
         </div>
         <div class="col-xl-4 col-lg-5">
           <div class="featured-text text-center text-lg-left">
-            <h4>Shoreline</h4>
-            <p class="text-black-50 mb-0">Grayscale is open source and MIT licensed. This means you can use it for any project - even commercial projects! Download it, customize it, and publish your website!</p>
+            <h4>Train, Validation and Test</h4>
+            <p class="text-black-50 mb-0">Divide all data sets into three folders: Train, validation and test by 8:1:1. Save those into three main folders, Each folder has 2 subfolders which are Normal case and Pneumonia case.</p>
           </div>
         </div>
       </div>
@@ -134,38 +140,73 @@
   </section>
   <!-- Vicky Section End-->
 
-  <!-- Mason Section End-->
+  <!-- Mason Section Start-->
   <!-- Model Section -->
   <section id="model" class="projects-section bg-light">
-    <div class="container">    
-      <!-- Model Theory-->
-      <div class="row align-items-center  mb-4 mb-lg-5">
-        <div class="col-xl-8 col-lg-7">
-          <img class="img-fluid mb-3 mb-lg" src="assets/img/vgg.png" alt="">
+    <div class="container">
+      <!-- Tools -->
+      <div class="row justify-content-center no-gutters mb-10 mb-lg-5">
+        <div class="col-lg-6">
+          <img class="img-fluid" src="assets/img/tool.png" alt="">
         </div>
-        <div class="col-xl-4 col-lg-5">
-          <img class="img-fluid mb-3 mb-lg" src="assets/img/layer.png" alt="">
-        </div>
-      </div>
-
-      <div class="row mb-4 mb-lg-5 mb-0 mb-lg-5">
-        <div class="col-xl-12 col-lg-12">
-          <div class="featured-text text-center text-lg-left mb-0 mb-lg-5">
-            <h4>Model Architecture</h4>
-            <p class="text-black-50 mb-50">Grayscale is open source and MIT licensed. This means you can use it for any project - even commercial projects! Download it, customize it, and publish your website!</p>
+        <div class="col-lg-6">
+          <div class="bg-black text-center h-100 project">
+            <div class="d-flex h-100">
+              <div class="project-text w-100 my-auto text-center text-lg-left">
+                <h4 class="text-white">Tools</h4>
+                <p class="mb-0 text-white-50">
+                  <ul>
+                    <li class="mb-0 text-white-50">AWS S3 - Data Storage</li>
+                    <li class="mb-0 text-white-50">matplotlib - Chart</li>
+                    <li class="mb-0 text-white-50">NumPy - Calculation</li>
+                    <li class="mb-0 text-white-50">pillow - Reading Image</li>
+                    <li class="mb-0 text-white-50">Kera+TenssorFlow- Deep Learning</li>
+                    <li class="mb-0 text-white-50">scikit learn - Data Preprocessing&Evaluation</li>
+                    <li class="mb-0 text-white-50">MLXTEND - Chart</li>
+                  </ul>
+                </p>
+                <hr class="d-none d-lg-block mb-0 ml-0">
+              </div>
+            </div>s
           </div>
         </div>
       </div>
 
-    <!-- Model Parameters -->
+    <!-- Base Model -->
     <div class="row align-items-center no-gutters mb-0 mb-lg-5">
       <div class="col-xl-8 col-lg-7">
-        <img class="img-fluid mb-0 mb-lg-0" src="assets/img/vgg16-2.png" alt="">
+        <img class="img-fluid mb-0 mb-lg-0" src="assets/img/vgg.png" alt="">
       </div>
       <div class="col-xl-4 col-lg-5">
         <div class="featured-text text-center text-lg-left">
-          <h4>Model</h4>
-          <p class="text-black-50 mb-0 mb-lg-0">Grayscale is open source and MIT licensed. This means you can use it for any project - even commercial projects! Download it, customize it, and publish your website!</p>
+          <h4>Base Model - VGG16</h4>
+          <p class="text-black-50 mb-0 mb-lg-0">VGG16 is a convolutional neural network model. It was known as one of the best trained models, which contains 16 weight layers</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Model Architecture-->
+    <div class="row align-items-center  mb-4 mb-lg-5">
+      <div class="col-xl-8 col-lg-7">
+        <img class="img-fluid mb-3 mb-lg" src="assets/img/vgg16-2.png" alt="">
+      </div>
+      <div class="col-xl-4 col-lg-5">
+        <div class="featured-text text-center text-lg-left">
+          <h4>Our Model</h4>
+        <img class="img-fluid mb-3 mb-lg" src="assets/img/layer.png" alt="">
+        </div>
+      </div>
+    </div>
+
+    <div class="row mb-4 mb-lg-5 mb-0 mb-lg-5">
+      <div class="col-xl-12 col-lg-12">
+        <div class="featured-text text-center text-lg-left mb-0 mb-lg-5">
+          <h4>Model Architecture</h4>
+          <p class="text-black-50 mb-50">We keep all the CNN layers from VGG16 by frozen the first 20 layers, remove the original output layers, then add 3 hidden layers(dense layer) for our model. 
+            Before training the model, the class weight has been adjusted for higher accuracy. Modelcheckpoint, ReduceLROnPlateau, and EarlyStopping are used in callback functions to 
+            save the model and prevent model overfitting.
+
+          </p>
         </div>
       </div>
     </div>
@@ -175,22 +216,25 @@
       <div class="col-xl-12 col-lg-12">
         <img class="img-fluid mb-3 mb-lg" src="assets/img/Performance.png" alt="">
       </div>
-    
-    <div class="row mb-10">
-      <div class="col-xl-12 col-lg-12">
-        <div class="featured-text text-center text-lg-left mb-0 mb-lg-0">
-          <h4>Model Performance</h4>
-          <p class="text-black-50 mb-8">Grayscale is open source and MIT licensed. This means you can use it for any project - even commercial projects! Download it, customize it, and publish your website!</p>
+    </div>
+      <div class="row mb-10">
+        <div class="col-xl-12 col-lg-12">
+          <div class="featured-text text-center text-lg-left mb-0 mb-lg-0">
+            <h4>Model Performance</h4>
+            <p class="text-black-50 mb-8">From the model accuracy graph, the best model is obtained at epoch10, 
+              since the trained model starts to overfitting after this point. We only pick the model at epoch10, and discard the rest.
+              Then this model was evaluated by test dataset, the result is: <br>
+              Normal Neural Network - Loss: 0.009955005720257759, Accuracy: 0.9522998332977295.
+            </p>
+          </div>
         </div>
       </div>
-    </div>
-
-    
 
     </div>
   </section>
-      
-  
+  <!-- Mason Section End-->  
+
+  <!-- Tenny Section Start-->
   <!-- Analysis Section -->
   <section id="projects" class="projects-section bg-light">
     <div class="container">    
@@ -250,13 +294,77 @@
           <div class="col-xl-12 col-lg-12">
             <div class="featured-text text-center text-lg-left mb-0 mb-lg-0">
               <h4 class="text-white mb-5">Prediction</h4>
-              <p class="text-white-50 mb-8">Grayscale is open source and MIT licensed. This means you can use it for any project - even commercial projects! Download it, customize it, and publish your website!</p>
+              <p class="text-white-50 mb-8">Grayscale is open source and MIT licensed. This means you can use it for any project - 
+                even commercial projects! Download it, customize it, and publish your website!</p>
             </div>
           </div>
     </div>
   </section>
+  <!-- Tenny Section End-->
+  
+  <!-- Contact Section -->
+  <section class="contact-section bg-black">
+    <div class="container">
 
-  <!-- Analysis Section Copy -->
+      <div class="row">
+
+        <div class="col-md-4 mb-3 mb-md-0">
+          <div class="card py-4 h-100">
+            <div class="card-body text-center">
+              <a href="https://github.com/masonxmh">
+              <i class="fab fa-github text-primary mb-2"></i>
+              </a>
+              <h4 class="text-uppercase m-0">Github</h4>
+              <hr class="my-4">
+              <h4>Mohan Xing</h2>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4 mb-3 mb-md-0">
+          <div class="card py-4 h-100">
+            <div class="card-body text-center">
+              <a href="https://github.com/peirangxu">
+              <i class="fab fa-github text-primary mb-2"></i>
+              </a>
+              <h4 class="text-uppercase m-0">Github</h4>
+              <hr class="my-4">
+              <h4>Peirang Xu</h2>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4 mb-3 mb-md-0">
+          <div class="card py-4 h-100">
+            <div class="card-body text-center">
+              <a href="https://github.com/Vicky0528">
+              <i class="fab fa-github text-primary mb-2"></i>
+              </a>
+              <h4 class="text-uppercase m-0">Github</h4>
+              <hr class="my-4">
+              <h4>Vicky Zhang</h2>
+            </div>
+          </div>
+        </div>
+
+        
+
+      <!-- <div class="social d-flex justify-content-center">
+        <a href="#" class="mx-2">
+          <i class="fab fa-twitter"></i>
+        </a>
+        <a href="#" class="mx-2">
+          <i class="fab fa-facebook-f"></i>
+        </a>
+        <a href="#" class="mx-2">
+          <i class="fab fa-github"></i>
+        </a>
+      </div> -->
+
+    </div>
+  </section>
+
+  <!-- Projects Section Copy -->
   <!-- <section id="projects" class="projects-section bg-light">
     <div class="container">    
       
@@ -374,6 +482,7 @@
     </div>
   </section> -->
 
+  
   <!-- Footer -->
   <footer class="bg-black small text-center text-white-50">
     <div class="container">
